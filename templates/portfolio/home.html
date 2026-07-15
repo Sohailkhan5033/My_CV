@@ -1,0 +1,291 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sohail Ahmad | Web Developer & Educator</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-content">
+    <a href="#home" class="logo">&lt;/&gt; Sohail<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-photo-wrap">
+      <img src="{% static 'images/myimage.jpeg' %}" alt="Sohail Ahmad">
+    </div>
+    <div class="hero-text">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1>Sohail Ahmad</h1>
+      <h2>Web Developer &amp; Educator</h2>
+      <p class="hero-desc">
+        Computer Science student who loves building real-world web apps and helping others learn to code —
+        from front-end interfaces to Django-powered back ends.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/your-handle" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/your-profile" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/923287344744" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <p class="eyebrow">About</p>
+  <h2 class="section-title">Get to know me</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a Computer Science student at the Islamia University of Bahawalpur (CGPA 3.66/4.00) with a strong
+        passion for technology and web development. I love exploring new tools and frameworks and enjoy building
+        real-world projects that solve everyday problems.
+      </p>
+      <p>
+        Alongside development, teaching has always been close to my heart — I find real satisfaction in helping
+        others learn and grow, whether that's guiding university students through web development or breaking
+        down programming fundamentals for beginners.
+      </p>
+      <div class="about-facts">
+        <div class="fact"><h3>3.66</h3><p>CGPA / 4.00</p></div>
+        <div class="fact"><h3>10+</h3><p>Projects Built</p></div>
+        <div class="fact"><h3>2+ yrs</h3><p>Teaching Experience</p></div>
+      </div>
+    </div>
+    <div class="education-card">
+      <h3>Education</h3>
+      <div class="edu-item">
+        <span class="edu-year">2023 – Present</span>
+        <h4>B.S. Computer Science</h4>
+        <p>The Islamia University of Bahawalpur</p>
+        <p class="edu-detail">CGPA: 3.66 / 4.00</p>
+      </div>
+      <div class="edu-item">
+        <span class="edu-year">2021 – 2023</span>
+        <h4>Intermediate (ICS)</h4>
+        <p>Aims College Lodhran</p>
+        <p class="edu-detail">Grade: A</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section section-alt">
+  <p class="eyebrow">Skills</p>
+  <h2 class="section-title">What I work with</h2>
+  <div class="skills-grid">
+    <div class="skill-card skill-1">
+      <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Languages</h3>
+      <div class="tags">
+        <span>Java</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>C++</span><span>SQL</span><span>Python</span>
+      </div>
+    </div>
+    <div class="skill-card skill-2">
+      <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+      <h3>Frameworks</h3>
+      <div class="tags">
+        <span>React.js</span><span>React Router</span><span>Axios</span><span>Bootstrap</span><span>Django</span>
+      </div>
+    </div>
+    <div class="skill-card skill-3">
+      <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+      <h3>Tools &amp; Platforms</h3>
+      <div class="tags">
+        <span>Git</span><span>Vite</span><span>VS Code</span><span>XAMPP</span><span>JSON Server</span>
+      </div>
+    </div>
+    <div class="skill-card skill-4">
+      <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+      <h3>Databases</h3>
+      <div class="tags">
+        <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+      </div>
+    </div>
+    <div class="skill-card skill-1">
+      <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+      <h3>Core Concepts</h3>
+      <div class="tags">
+        <span>OOP</span><span>DSA</span><span>Front-End Dev</span><span>Problem Solving</span><span>CRUD</span>
+      </div>
+    </div>
+    <div class="skill-card skill-2">
+      <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+      <h3>Content &amp; Writing</h3>
+      <div class="tags">
+        <span>SEO Writing</span><span>Blog Writing</span><span>Technical Writing</span><span>Copywriting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <p class="eyebrow">Experience</p>
+  <h2 class="section-title">Where I've made an impact</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot dot-1"></div>
+      <div class="timeline-content">
+        <span class="timeline-tag tag-1">Development</span>
+        <h3>Web Developer — Freelance / Academic Projects</h3>
+        <p>Built full-stack web apps using React, Bootstrap, Vite, and db.json, including admin panels, dynamic UIs, and mock API integrations for real-time CRUD operations. Also worked with Django and SQLite to build a complete Stationery Store Management System handling inventory, admin controls, and customer-facing features.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot dot-2"></div>
+      <div class="timeline-content">
+        <span class="timeline-tag tag-2">Writing</span>
+        <h3>Content Writer — Freelance (Online Clients)</h3>
+        <p>Wrote SEO-optimized, AI-free, plagiarism-free articles, with content indexed on Google for tech and blog websites.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot dot-3"></div>
+      <div class="timeline-content">
+        <span class="timeline-tag tag-3">Teaching</span>
+        <h3>Web Development &amp; Programming Fundamentals (2024 – Present)</h3>
+        <p>Teaching HTML, CSS, JavaScript, Python, C++, and C to university students — focused on clearing core concepts from scratch and guiding students to build small real-world projects.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot dot-3"></div>
+      <div class="timeline-content">
+        <span class="timeline-tag tag-3">Teaching</span>
+        <h3>Intermediate Level Tutor (2020 – 2023)</h3>
+        <p>Taught Computer Science, English, and Mathematics to intermediate-level students, focusing on simple, exam-ready explanations of core concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section section-alt">
+  <p class="eyebrow">Projects</p>
+  <h2 class="section-title">Things I've built</h2>
+  <div class="projects-grid">
+    <div class="project-card accent-1">
+      <h3>Stationery Store Management System</h3>
+      <p class="project-stack"><span>Django</span><span>SQLite</span></p>
+      <ul>
+        <li>Admin panel for inventory management (add, update, delete products)</li>
+        <li>Customer side for browsing products &amp; scheduling parcel pickup</li>
+        <li>Django ORM with built-in SQLite database</li>
+      </ul>
+    </div>
+    <div class="project-card accent-2">
+      <h3>Restaurant Management System</h3>
+      <p class="project-stack"><span>React</span><span>db.json</span><span>Vite</span></p>
+      <ul>
+        <li>Table booking, admin login, and order placing</li>
+        <li>Real-time CRUD operations via mock db.json backend</li>
+      </ul>
+    </div>
+    <div class="project-card accent-3">
+      <h3>Simon Game</h3>
+      <p class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+      <ul>
+        <li>Memory game testing player sequences and reactions</li>
+        <li>DOM manipulation, event listeners, timeouts, animations</li>
+      </ul>
+    </div>
+    <div class="project-card accent-4">
+      <h3>Library Management System</h3>
+      <p class="project-stack"><span>PostgreSQL</span></p>
+      <ul>
+        <li>Full relational schema: books, borrowers, lending history</li>
+        <li>Applied database normalization principles</li>
+      </ul>
+    </div>
+    <div class="project-card accent-1">
+      <h3>Music Player System</h3>
+      <p class="project-stack"><span>Java</span><span>Linked List</span></p>
+      <ul>
+        <li>Console-based player using linked lists for track management</li>
+        <li>Node linking, insertion, deletion, and traversal</li>
+      </ul>
+    </div>
+    <div class="project-card accent-2">
+      <h3>Electricity Billing System</h3>
+      <p class="project-stack"><span>Java GUI</span><span>MySQL</span></p>
+      <ul>
+        <li>GUI-based billing calculation and management</li>
+        <li>Real-time data fetch/update via MySQL backend</li>
+      </ul>
+    </div>
+    <div class="project-card accent-3">
+      <h3>Attendance Management System</h3>
+      <p class="project-stack"><span>Java</span><span>File Handling</span></p>
+      <ul>
+        <li>Marks and manages student attendance</li>
+        <li>Persistent storage using text files</li>
+      </ul>
+    </div>
+    <div class="project-card accent-4">
+      <h3>Avatar: The Last Airbender — Game Design</h3>
+      <p class="project-stack"><span>Figma</span><span>HCI</span></p>
+      <ul>
+        <li>Full game UI: Main Menu, Character Select, Level Select, Gameplay</li>
+        <li>Applied HCI principles for navigation and visual hierarchy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section">
+  <p class="eyebrow">Certificates</p>
+  <h2 class="section-title">Continued learning</h2>
+  <div class="cert-grid">
+    <div class="cert-card"><i class="fa-solid fa-brain"></i><h3>Artificial Intelligence and Machine Learning</h3><p>Foundational AI/ML concepts, core algorithms, model types, real-world applications.</p></div>
+    <div class="cert-card"><i class="fa-solid fa-shield-halved"></i><h3>AI and Digital Safety: Risks and Solutions</h3><p>Ethical use of AI, digital safety risks, and responsible AI usage best practices.</p></div>
+    <div class="cert-card"><i class="fa-solid fa-database"></i><h3>Introduction to SQL</h3><p>Database fundamentals, table structure, and writing queries to retrieve and manage data.</p></div>
+    <div class="cert-card"><i class="fa-solid fa-sitemap"></i><h3>Database Design</h3><p>OLTP and OLAP approaches, normalization, views, and database management techniques.</p></div>
+    <div class="cert-card"><i class="fa-solid fa-table"></i><h3>Introduction to Relational Databases in SQL</h3><p>Relational database concepts: tables, relationships, keys, and core SQL operations.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section section-alt contact-section">
+  <p class="eyebrow">Contact</p>
+  <h2 class="section-title">Let's work together</h2>
+  <p class="contact-sub">Open to web development, teaching, and content writing opportunities.</p>
+  <div class="contact-grid">
+    <a href="tel:03287344744" class="contact-card"><i class="fa-solid fa-phone"></i><h3>Phone</h3><p>0328 7344744</p></a>
+    <a href="mailto:ahamdsohail5033@gmail.com" class="contact-card"><i class="fa-solid fa-envelope"></i><h3>Email</h3><p>ahamdsohail5033@gmail.com</p></a>
+    <div class="contact-card"><i class="fa-solid fa-location-dot"></i><h3>Address</h3><p>H#28, Duniyapur, Lodhran</p></div>
+  </div>
+  <div class="social-links social-links-lg">
+    <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://instagram.com/your-handle" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://facebook.com/your-profile" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://wa.me/923287344744" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Sohail Ahmad. Built with Django.</p>
+</footer>
+
+</body>
+</html>
